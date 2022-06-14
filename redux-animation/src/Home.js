@@ -3,36 +3,14 @@ import { Link } from 'react-router-dom';
 import { Button, Container } from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import AppNavbar from './Navbar';
 
 class Home extends Component {
   render() {
     return (
       <div>
         <Container fluid>
-          <Button className="m-5 nav bg-light">
-            <Link
-              to="/barchart"
-              className="nav-link"
-            >
-              Bar Chart
-            </Link>
-          </Button>
-          <Button className="m-5 nav bg-light">
-            <Link
-              to="/tree"
-              className="nav-link"
-            >
-              Tree Node
-            </Link>
-          </Button>
-          <Button className="m-5 nav bg-light">
-            <Link
-              to="/lightorb"
-              className="nav-link"
-            >
-              Light Orb
-            </Link>
-          </Button>
+          <h1 className="d-flex justify-content-center m-5">Animation Components</h1>
         </Container>
       </div>
     )

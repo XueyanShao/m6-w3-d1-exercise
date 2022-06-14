@@ -9,6 +9,7 @@ import { Canvas } from "@react-vertex/core";
 import { useViewportSize } from "@react-vertex/dom-hooks";
 import Scene from "./Scene";
 import Home from './Home';
+import AppNavbar from './Navbar';
 
 function Example() {
   const { width, height } = useViewportSize();
@@ -28,6 +29,7 @@ function TreeNode() {
 function App() {
   return (
     <Router>
+      <AppNavbar />
         <Switch>
           <Route path='/' exact={true} component={Home} />
           <Route path='/barchart' exact={true} component={BarChart} />
